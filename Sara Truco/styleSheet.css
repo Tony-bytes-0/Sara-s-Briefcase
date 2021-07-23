@@ -1,0 +1,39 @@
+.tittle{
+    background-image: url("saraTrucoFiles/pastel-wallpaper-.jpg");
+    margin:15px;
+    height: 150px;
+    padding: 20px;
+    box-shadow: 0 0 10px black ;
+}
+.skills{
+    display:flex;
+    justify-content: center;
+    margin:7em 7em;
+}
+.skills>div{
+    border-style: inset;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.description{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 400px;
+    width: 1290px;
+    background-color:rgb(216, 123, 208);
+}
+.description > div{
+    background-color: bisque;
+    text-align: center;
+    padding :20px;
+    margin: 15px;
+    height: 300px;
+    width: 100%;
+}
+
+html{
+    background-image:url("saraTrucoFiles/wallppr.jpg");
+    background-size: cover;
+}

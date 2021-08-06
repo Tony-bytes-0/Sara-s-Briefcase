@@ -6,22 +6,57 @@
     <title>Sara Truco</title>
 </head>
 <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.9.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.9.0/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
     <h1 class="tittle">SARA TRUCO</h1>
 
 <div class="skills">
     <div><img src="saraTrucoFiles/libroco.jpg" alt="Sara's Profile" height="250" width="210"></div>
     <p style="padding: 15px;">me llamo Nazareth, tengo 16 años<br><br>mis hobbies son editar y dibujar<br><br>soy alguien introvertida<br><br>
     me gustan las mascotas<br><br>
-    del k-pop<br><br></p>
+    fan del k-pop<br><br></p>
 </div>
-<br><br><br><br><br>
-    <div class="description">
-            <div ><h3>Edits</h3><img src="saraTrucoFiles/cara mamona.jpg"></div>
-            <div ><h3>Monitas Chinas</h3><img src="saraTrucoFiles/QTIEnyan.jpg" height="250"></div>
-            <div ><h3>Face Edits</h3><img src="saraTrucoFiles/qtie.jpg" height="250"></div>
-            <div ><h3>Walpapers</h3><img src="saraTrucoFiles/wapo el encabezado.jpg" height="250"></div>
-    </div>
 
-    <br><br><br><br><br>
+    <div class="description">
+            <div ><h2>Original Characters</h2><img onclick=hideShow(1) src="saraTrucoFiles/divSource/chimchim.jpg" height="200" width="250"></div>
+            <div ><h2>Icons</h2><img onclick=hideShow(2) src="saraTrucoFiles/QTIEnyan.jpg" height="250"></div>
+            <div ><h2>Face Edits</h2><img onclick=hideShow(3) src="saraTrucoFiles/qtie.jpg" height="250"></div>
+            <div ><h2>Walpapers</h2><img onclick=hideShow(4) src="saraTrucoFiles/wapo el encabezado.jpg" height="250"></div>
+    </div>
+<div class="hide" id="Original Characters">
+    <img src="saraTrucoFiles/divSource/lentes.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/lentesV.jpg" height="250">
+    <a style="text-align: center; background-color: gray; opacity: 0.5;" class="show" onclick=hideShow(1) height="10"><h3>Atras</h3></a><!-- boton de cerrar -->
+</div>
+<div class="hide" id="icons">
+    <img src="saraTrucoFiles/divSource/3-02.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/-08.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/-25.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/35-17.jpg" height="250">
+    <a style="text-align: center; background-color: gray; opacity: 0.5;" class="show" onclick=hideShow(2) height="10"><h3>Atras</h3></a><!-- boton de cerrar -->
+</div>
+
+<div class="hide" id="faceEdits">
+    <img src="saraTrucoFiles/divSource/3-02.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/2.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/26.jpg" height="250">
+    <a style="text-align: center; background-color: gray; opacity: 0.5;" class="show" onclick=hideShow(3) height="10"><h3>Atras</h3></a><!-- boton de cerrar -->
+</div>
+
+<div class="hide" id="wallpapers">
+    <img src="saraTrucoFiles/divSource/7.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/22.jpg" height="250">
+    <img src="saraTrucoFiles/divSource/he.jpg" height="250">
+    <a style="text-align: center; background-color: gray; opacity: 0.5;" class="show" onclick=hideShow(4) height="10"><h3>Atras</h3></a><!-- boton de cerrar -->
+</div>
+<p style="text-align: center;">mi canal de telegram, aca subo mis trabajos!!!</p>    
+<div class="cuteButton"> <a   href="https://t.me/bynasa"><img height="60" width="72"  src="saraTrucoFiles/telegramLogo.png"></a></div>
+    <script src="app.js"></script>
 </body>
 </html>

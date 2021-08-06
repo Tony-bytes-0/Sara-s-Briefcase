@@ -1,30 +1,9 @@
-var formulario = document.getElementsByTagName("formulario")[0],
-elementos = formulario.elements,
-boton= document.getElementById("btn");
-
-
-var validar = function(e){
-    if (formulario.nombre.value == 0){
-        aler("inserte el nombre");
-        e.preventDefault();
-    }
-}
-var validar = function(e){
-    validarNombre(e)
-    validarRadio(e)
-    validarCheckbox(e)
-}
-var validarRadio = function(e){
-    if (formulario.sexo[0].checked == true || formulario.sexo[1].checked == true){
-    }else{
-        alert("completa el campo de sexo");
-        e.preventDefault();
-    }
-var validarCheckbox = function(e){
-    if(formulario.terminos.checked == false){
-        alert("acept");
-        e.preventDefault();
-    }
-}
-}
-formulario.addEventListener("submit", validar);
+var hideShow = function (menu){
+    if (menu == 1)     {menu="Original Characters"}
+    else if (menu == 2){menu="icons"}
+    else if (menu == 3){menu="faceEdits"}
+    else if (menu == 4){menu="wallpapers"}
+    var aux = document.getElementById(menu);
+    if(aux.className == "hide")     {    aux.className="show";    }
+    else if(aux.className == "show"){    aux.className="hide";    }
+};
